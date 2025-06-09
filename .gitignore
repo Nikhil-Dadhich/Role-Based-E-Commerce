@@ -1,0 +1,30 @@
+# Node modules folder
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables file
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders/files
+.vscode/
+.idea/
+
+# Build output (if any)
+dist/
+build/
+
+# Optional: EJS cache or temp files (if any)
+*.cache
+
+# If you use npm-debug or yarn-debug
+npm-debug.log*
+yarn-debug.log*
+

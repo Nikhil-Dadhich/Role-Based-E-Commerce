@@ -4,6 +4,7 @@ const nodemailer = require('nodemailer');
 const User = require('../models/user');
 const {validationResult}  = require('express-validator');
 const MAIL_PASS = process.env.MAIL_PASS;
+const EMAIL_USER = process.env.EMAIL_USER;
 
 
 const transporter = nodemailer.createTransport({
@@ -11,7 +12,7 @@ const transporter = nodemailer.createTransport({
   secure: true,
   port: 465,
   auth: {
-    user: 'nikhil720416@gmail.com',
+    user: EMAIL_USER,
     pass: MAIL_PASS
   }
 });

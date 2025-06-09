@@ -121,7 +121,7 @@ Each order automatically generates a PDF invoice with:
 
 - **Backend:** Node.js, Express.js  
 - **Database:** MongoDB, Mongoose  
-- **Templating:** EJS, Bootstrap  
+- **Templating:** EJS  
 - **Security:** bcrypt, CSRF middleware, sessions  
 - **PDF Generation:** pdfkit  
 - **Email:** nodemailer  

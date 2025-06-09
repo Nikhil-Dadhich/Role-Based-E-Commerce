@@ -4,6 +4,8 @@ const nodemailer = require('nodemailer');
 const User = require('../models/user');
 const {validationResult}  = require('express-validator');
 const MAIL_PASS = process.env.MAIL_PASS;
+
+
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   secure: true,
@@ -192,6 +194,7 @@ exports.postReset = (req, res, next) => {
       return res.redirect('/reset');
     }
     const token = buffer.toString('hex');
+    const resetLink = `${process.env.BASE_URL}/reset/${token}`;
     User.findOne({email:req.body.email})
     .then(user=>{
       if(!user){
@@ -209,7 +212,7 @@ exports.postReset = (req, res, next) => {
             subject: 'Password Change',
             html: `
               <p>You requested a password reset</p>
-              <p>Click this <a href="http://localhost:3000/reset/${token}"> link </a> to set a new password.</p>
+              <p>Click this <a href="${resetLink}"> link </a> to set a new password.</p>
             `
           })
     })

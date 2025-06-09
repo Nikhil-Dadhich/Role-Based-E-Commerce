@@ -66,8 +66,10 @@ Role-Based-E-Commerce/
    ```ini
    MONGODB_URI=your_mongodb_connection_string
    SESSION_SECRET=your_session_secret
+   PORT=your_port_number
    EMAIL_USER=your_email@example.com
-   EMAIL_PASS=your_email_password_or_app_password
+   MAIL_PASS=your_generated_google_app_password_for_nodemailer
+   BASE_URL=your_base_url_here
    ```
 
 4. **Start the server**

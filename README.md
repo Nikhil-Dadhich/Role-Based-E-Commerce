@@ -1,6 +1,8 @@
 
 # 🛒 Role-Based E-Commerce
 
+![System Diagram](https://github.com/Nikhil-Dadhich/Role-Based-E-Commerce/blob/main/Diagram.png?raw=true)
+
 A full-stack e-commerce platform built using **Node.js**, **Express**, **MongoDB**, and **EJS**. It supports **role-based access control**, giving distinct permissions to Admins and Customers. The project includes product management, cart and order handling, secure login, CSRF protection, PDF invoice generation, and password reset via email.
 
 ---
@@ -125,3 +127,4 @@ Each order automatically generates a PDF invoice with:
 - **Security:** bcrypt, CSRF middleware, sessions  
 - **PDF Generation:** pdfkit  
 - **Email:** nodemailer  
+
